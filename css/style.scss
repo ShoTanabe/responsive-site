@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+//font-color
+$baseColor: #FFFAE5;
+$subColor: #6BFFEF;
+$keyColor: #0F7F73;
+$fontColor: #333333;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+
+/* Header
+------------------------------------------------------------*/
+
+header{
+    width: 100%;
+	height: 250px;
+	background-image:url("../images/s_mainImage.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+// desktop
+    @media (min-width: 769px){
+            width: 100%;
+        	height: 500px;
+        	background-image:url("../images/mainImage.jpg");
+        	background-position: center;
+        	background-repeat: no-repeat;
+    }
+	
+}
+	
+
+    
+
+
+
+
+
+/* Main
+------------------------------------------------------------*/
+
+main{
+    margin-bottom: 20px;
+    
+    #main-title{
+        font:{
+            size:1.8rem;
+            weight: bold;
+        }
+        line-height: 4.0rem;
+        text-align: center;
+        margin: 15px 0;
+
+        
+    }
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+         .box{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            
+            .box-title{
+                line-height: 2.8rem;
+                background-color: $keyColor;
+                color:white;
+            }
+            .box-text{
+                height: 150px;
+                background-color: $subColor;
+            }
+       }
+    }
+    
+    // desktop
+    @media (min-width: 769px){
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+             .box{
+                width: 30%;
+                text-align: center;
+                margin-bottom: 10px;
+                
+                .box-title{
+                    line-height: 2.8rem;
+                    background-color: $keyColor;
+                    color:white;
+                }
+                .box-text{
+                    height: 150px;
+                    background-color: $subColor;
+            
+                }    
+            }
+        }
+    }
+    
+}
+
+
+
+/* Footer
+------------------------------------------------------------*/
+footer{
+
+    background-color:#774e08;
+    padding-bottom: 30px; 
+    
+    .footer-text{
+        color: white;
+        padding: 20px 0 5px 0;
+        text-align: center;
+    }
+    .btn{
+        color: white;
+        line-height: 3.0rem;
+        box-sizing: border-box;
+        border: solid 2px white;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        background-color: $keyColor;
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+}
